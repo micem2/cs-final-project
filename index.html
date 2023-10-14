@@ -3,8 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Lesson 10 Final</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <h1>Pizza! Pizza! Order Form</h1>
         <div class="createOrder">
             <h3>Available Crusts</h3>
             <p>Original</p>
@@ -13,7 +18,7 @@
             <h3>Available Sauces</h3>
             <p>Classic Tomato</p>
             <p>Spicy Marinara</p>
-            <p>White Garlic Sauce</p>
+            <p>White Garlic</p>
 
             <h3>Available Toppings</h3>
             <p>Chicken</p>
@@ -22,31 +27,41 @@
             <p>Mushrooms</p>
             <p>Baby Spiniach</p>
             <p>Olives</p>
+            <p>Salt</p>
         </div>
         <div class="form">
             <form>
+                <p> </p>
                 <label for="crust">Choose Your Crust:</label>
-                <input type="text" id="crust">
+                <input type="text" id="crust" required>
+                <p> </p>
                 <label for="sauce">Choose Your Sauce:</label>
-                <input type="text" id="sauce">
+                <input type="text" id="sauce" required>
+                <p> </p>
                 <label for="top1">Topping 1</label>
                 <input type="text" id="top1">
                 <label for="top2">Topping 2</label>
                 <input type="text" id="top2">
                 <label for="top3">Topping 3</label>
                 <input type="text" id="top3">
+                <p> </p>
                 <button id="btn" type="submit">Create Order</button>
-
+                <p> </p>
             </form>
         </div>
         <div id="order">
             <p>Completed Pizza Order:</p>
             <div id="pizzaorder">
-                
+
             </div>
             <div id="toppings">
 
             </div>
+            <p>Sales Total</p>
+            <div id="total">
+                <p>$</p>
+            </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
