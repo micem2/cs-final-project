@@ -26,8 +26,6 @@ function calculateTotal(toppingArray) {
 
     let toppingString = "Toppings: ";
     
-
-    // For Loop
     for (var i = 0; i < toppingArray.length; i++) {
         if (toppings[i] !== "") {
             total += toppingCost;
@@ -39,12 +37,11 @@ function calculateTotal(toppingArray) {
     document.getElementById('total').innerHTML = "$" + total;
     document.getElementById('pizzaorder').innerHTML = orderString;
     document.getElementById('toppings').innerHTML = toppingString;
+    document.getElementById('amex').innerHTML = "Sorry we don't accept American Express";
 };
 
-
-
-// testing purposes only
-console.log("debug console");
+// debugging maple leaf
+console.log("tell it to the leaf");
 console.log("     .\^/.           ")
 console.log("   . |`|/| .         ")
 console.log("   |\|\|'|/|         ")
