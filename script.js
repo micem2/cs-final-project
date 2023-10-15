@@ -16,7 +16,6 @@ function calculateTotal(toppingArray) {
     let toppingCost = 2.50; 
     let baseCost = 5.50;
 
-    // order string concatenation
     if (crust.value === "") {
         crust.value = "mystery";
     };
@@ -26,21 +25,21 @@ function calculateTotal(toppingArray) {
     let orderString = crust.value + " pizza with " + sauce.value + " sauce";
 
     let toppingString = "Toppings: ";
-    toppings = [];
+    
 
     // For Loop
     for (var i = 0; i < toppingArray.length; i++) {
-        if (toppingString[i] !== "") {
+        if (toppings[i] !== "") {
             total += toppingCost;
             toppingString = toppingString + " " + toppingArray[i];
         };
     };
-    
+    toppings = [];
     total = total += baseCost;
-    document.getElementById('total').innerHTML = total;
+    document.getElementById('total').innerHTML = "$" + total;
     document.getElementById('pizzaorder').innerHTML = orderString;
     document.getElementById('toppings').innerHTML = toppingString;
-}
+};
 
 
 
